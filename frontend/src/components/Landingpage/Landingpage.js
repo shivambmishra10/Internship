@@ -1,14 +1,15 @@
 import React from 'react'
 import "./Landingpage.css"
+import { Link } from "react-router-dom";
 const landingpage = () => {
   return (
     <div>
         <section>
           
             <header>
-                <h2> <a href='#' class="logo">SVNIT</a></h2>
+                <h2> <a href='#' className="logo">SVNIT</a></h2>
                 
-                <div class="navigation">
+                <div className="navigation">
                     <a href='#'>Home</a>
                     <a href='#'>About</a>
                     <a href='#'>Info</a>
@@ -16,18 +17,22 @@ const landingpage = () => {
                     <a href='#'>Contact</a>
                 </div>
             </header>
-             <div class="content">
-                <div class="info">
-                    <h2>Internship <span>Tracker</span></h2>
+             <div className="content">
+                <div className="info">
+                    <h2>Internship Tracker</h2>
                     <p>National Institute of Technology Surat (SVNIT or NIT Surat), is a public technical university established by the Parliament of India in 1961. It is one of 31 National Institutes of Technology in India</p>
-                    <a href='#' class="info-btn">Register</a>
+                    {/* <a href='#' className="info-btn">Register</a> */}
+                    <Link to="/registration" className='info-btn'>Register</Link>
+                    
+                    <Link to="/admin" className='info-btn1'>Admin Entry</Link>
+                    
                 </div>
             </div>
             <footer>
-            <div class="media-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div className="media-icons">
+                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                <a href="#"><i className="fab fa-twitter"></i></a>
+                <a href="#"><i className="fab fa-instagram"></i></a>
             </div> 
             </footer>
         </section>
