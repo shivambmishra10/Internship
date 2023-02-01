@@ -7,7 +7,7 @@ const landingpage = () => {
         <section>
           
             <header>
-                <h2> <a href='#' className="logo">SVNIT</a></h2>
+                <h2> <Link to='/' className="logo">SVNIT</Link></h2>
                 
                 <div className="navigation">
                     <a href='#'>Placed</a>
