@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom';
 import "./Admin.css"
+import { register } from "../../../../src/services/api";
 const Auth = () => {
     const [style, setStyle] = useState("login-form1");
     const [x, setX] = useState("login");
